@@ -24,10 +24,10 @@ tempTheta(1) = 0;
 
 h = X * theta;
 
-cost = ((1/(2*m) ) * ( (h - y)' * (h-y) )) + ((lambda/(2*m) ) * (tempTheta' * tempTheta))
+cost = ((1/(2*m) ) * ( (h - y)' * (h-y) )) + ((lambda/(2*m) ) * (tempTheta' * tempTheta));
 
 J = cost;
-
+grad = (1/m) * (X' * (h-y)) + lambda/m * tempTheta;
 
 
 
